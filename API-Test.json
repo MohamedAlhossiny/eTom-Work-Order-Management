@@ -1,0 +1,42 @@
+// POST http://localhost:9091/workorder-api/api/workOrder
+{
+      "externalId": "WO-001",
+      "state": "active",
+      "priority": "high",
+      "description": "Test work order description",
+      "startDate": "2023-01-01T00:00:00.000Z",
+      "endDate":   "2025-01-01T00:00:00.000Z",
+      "items": [
+        {
+          "action": "test_action",
+          "description": "test item description",
+          "state": "pending",
+          "sequence": 1
+        }
+      ],
+      "places": [
+        {
+          "role": "location",
+          "name": "Main Office",
+          "city": "cairo",
+          "address": "asda",
+          "state": "cairo",
+          "zipCode": "32434"
+        }
+      ],
+      "relatedParties": [
+        {
+          "role": "customer",
+          "name": "John Doe",
+          "email": "mohamed@gmail.com",
+          "phone": "01020053936"
+        }
+      ]
+}
+
+// POST http://localhost:9091/workorder-api/api/cancelWorkOrder
+{
+    "workOrderId": 2,
+    "reason": "Customer requested cancellation",
+    "requestedBy": "john.doe@example.com"
+}
