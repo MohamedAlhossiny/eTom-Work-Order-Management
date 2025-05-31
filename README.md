@@ -201,4 +201,4 @@ java -jar target/workorder-1.0-SNAPSHOT.jar
 ```
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the ITI License - see the LICENSE file for details. 
